@@ -61,10 +61,15 @@ namespace Tyuiu.VoytovichKA.Sprint6.Task1.V30
         }
         private void buttonAbout_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 0, выполнил студент группы НТм-25-1 Войтович Климентий Антонович", "Описание", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Таск 1, выполнил студент группы НТм-25-1 Войтович Климентий Антонович", "Описание", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void groupBoxOutput_VKA_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxFormula_VKA_Click(object sender, EventArgs e)
         {
 
         }

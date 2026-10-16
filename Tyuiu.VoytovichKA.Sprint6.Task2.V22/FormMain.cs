@@ -81,5 +81,10 @@ namespace Tyuiu.VoytovichKA.Sprint6.Task2.V22
         {
             buttonExecute.BackColor = Color.MediumSpringGreen;
         }
+
+        private void chartFunction_VKA_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

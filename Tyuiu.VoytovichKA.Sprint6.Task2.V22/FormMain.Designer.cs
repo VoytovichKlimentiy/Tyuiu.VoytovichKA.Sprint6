@@ -86,6 +86,7 @@
             chartFunction_VKA.Size = new Size(676, 373);
             chartFunction_VKA.TabIndex = 17;
             chartFunction_VKA.Text = "chartFunction_VKA";
+            chartFunction_VKA.Click += chartFunction_VKA_Click;
             // 
             // dataGridViewFunction_VKA
             // 

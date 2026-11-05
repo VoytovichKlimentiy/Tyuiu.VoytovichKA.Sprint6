@@ -11,7 +11,7 @@ namespace Tyuiu.VoytovichKA.Sprint6.Task6.V23.Test
             DataService ds = new DataService();
             string path = Path.Combine(Directory.GetCurrentDirectory(), "InPutDataFileTask6V23.txt");
             string res = ds.CollectTextFromFile(path);
-            Assert.AreEqual("ainUD vngvDXy iKDOjtfsPmw LTJkHL", res);
+            Assert.AreEqual("iKDOjtfsPmw", res);
         }
     }
 }

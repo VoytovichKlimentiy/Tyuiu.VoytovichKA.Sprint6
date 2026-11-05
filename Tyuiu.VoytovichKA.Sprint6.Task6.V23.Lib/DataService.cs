@@ -12,9 +12,13 @@ namespace Tyuiu.VoytovichKA.Sprint6.Task6.V23.Lib
                 string line;
                 while ((line = sr.ReadLine()) != null)
                 {
-                    if (line.Contains('s'))
+                    string[] words = line.Split(new char[] {' '},StringSplitOptions.RemoveEmptyEntries);
+                    foreach (string word in words)
                     {
-                        res = res + line + " ";
+                        if (word.Contains('s'))
+                        {
+                            res = res + word + " ";
+                        }
                     }
                 }
             }

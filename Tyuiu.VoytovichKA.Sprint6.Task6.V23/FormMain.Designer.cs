@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             groupBoxButtons_VKA = new GroupBox();
             buttonAbout_VKA = new Button();
             buttonExecute_VKA = new Button();
@@ -40,6 +41,9 @@
             textBoxInput_VKA = new TextBox();
             groupBoxInput_VKA = new GroupBox();
             openFileDialog_VKA = new OpenFileDialog();
+            toolTipFile_VKA = new ToolTip(components);
+            toolTipExecute_VKA = new ToolTip(components);
+            toolTipAbout_VKA = new ToolTip(components);
             groupBoxButtons_VKA.SuspendLayout();
             groupBoxCondition_VKA.SuspendLayout();
             groupBoxOutput_VKA.SuspendLayout();
@@ -60,17 +64,20 @@
             // 
             // buttonAbout_VKA
             // 
+            buttonAbout_VKA.Cursor = Cursors.Help;
             buttonAbout_VKA.Dock = DockStyle.Right;
             buttonAbout_VKA.Image = Properties.Resources.info;
             buttonAbout_VKA.Location = new Point(906, 19);
             buttonAbout_VKA.Name = "buttonAbout_VKA";
             buttonAbout_VKA.Size = new Size(75, 70);
             buttonAbout_VKA.TabIndex = 2;
+            toolTipFile_VKA.SetToolTip(buttonAbout_VKA, "О проекте");
             buttonAbout_VKA.UseVisualStyleBackColor = true;
             buttonAbout_VKA.Click += buttonAbout_VKA_Click;
             // 
             // buttonExecute_VKA
             // 
+            buttonExecute_VKA.Cursor = Cursors.Hand;
             buttonExecute_VKA.Dock = DockStyle.Left;
             buttonExecute_VKA.Enabled = false;
             buttonExecute_VKA.Image = Properties.Resources.fileNew;
@@ -78,17 +85,20 @@
             buttonExecute_VKA.Name = "buttonExecute_VKA";
             buttonExecute_VKA.Size = new Size(75, 70);
             buttonExecute_VKA.TabIndex = 1;
+            toolTipExecute_VKA.SetToolTip(buttonExecute_VKA, "Выполнить\r\nВыполнить программу согласно условию.");
             buttonExecute_VKA.UseVisualStyleBackColor = true;
             buttonExecute_VKA.Click += buttonExecute_VKA_Click;
             // 
             // buttonFile_VKA
             // 
+            buttonFile_VKA.Cursor = Cursors.Hand;
             buttonFile_VKA.Dock = DockStyle.Left;
             buttonFile_VKA.Image = Properties.Resources.Folder;
             buttonFile_VKA.Location = new Point(3, 19);
             buttonFile_VKA.Name = "buttonFile_VKA";
             buttonFile_VKA.Size = new Size(75, 70);
             buttonFile_VKA.TabIndex = 0;
+            toolTipAbout_VKA.SetToolTip(buttonFile_VKA, "Открыть файл\r\nВыберите нужный файл в формате .txt для обработки.");
             buttonFile_VKA.UseVisualStyleBackColor = true;
             buttonFile_VKA.Click += buttonFile_VKA_Click;
             // 
@@ -198,5 +208,8 @@
         private Button buttonExecute_VKA;
         private Button buttonFile_VKA;
         private OpenFileDialog openFileDialog_VKA;
+        private ToolTip toolTipExecute_VKA;
+        private ToolTip toolTipFile_VKA;
+        private ToolTip toolTipAbout_VKA;
     }
 }

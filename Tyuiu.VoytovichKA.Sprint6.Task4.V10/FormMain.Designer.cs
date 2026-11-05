@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain_VKA));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             groupBoxMain_VKA = new GroupBox();
             groupBoxCondition_VKA = new GroupBox();
             textBox1 = new TextBox();
@@ -193,23 +193,23 @@
             // 
             // chartFunction_VKA
             // 
-            chartArea1.Name = "ChartArea1";
-            chartFunction_VKA.ChartAreas.Add(chartArea1);
+            chartArea2.Name = "ChartArea1";
+            chartFunction_VKA.ChartAreas.Add(chartArea2);
             chartFunction_VKA.Dock = DockStyle.Right;
-            legend1.Name = "Legend1";
-            chartFunction_VKA.Legends.Add(legend1);
+            legend2.Name = "Legend1";
+            chartFunction_VKA.Legends.Add(legend2);
             chartFunction_VKA.Location = new Point(223, 130);
             chartFunction_VKA.Name = "chartFunction_VKA";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            chartFunction_VKA.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            chartFunction_VKA.Series.Add(series2);
             chartFunction_VKA.Size = new Size(761, 331);
             chartFunction_VKA.TabIndex = 2;
             chartFunction_VKA.Text = "chart1";
-            title1.Name = "TitleFunc";
-            title1.Text = "График заданной функции";
-            chartFunction_VKA.Titles.Add(title1);
+            title2.Name = "TitleFunc";
+            title2.Text = "График заданной функции";
+            chartFunction_VKA.Titles.Add(title2);
             // 
             // groupBoxOutput_VKA
             // 
@@ -246,7 +246,8 @@
             MinimumSize = new Size(975, 400);
             Name = "FormMain_VKA";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Спринт 6 | Таск 4 | Вариант 10 | Войтович К.А.";
+            Text = "Спринт 6 | Таск 5 | Вариант 24 | Войтович К.А.";
+            Load += FormMain_VKA_Load;
             groupBoxMain_VKA.ResumeLayout(false);
             groupBoxMain_VKA.PerformLayout();
             groupBoxCondition_VKA.ResumeLayout(false);

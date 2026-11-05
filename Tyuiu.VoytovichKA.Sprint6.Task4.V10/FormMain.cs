@@ -78,6 +78,9 @@ namespace Tyuiu.VoytovichKA.Sprint6.Task4.V10
             }
         }
 
+        private void FormMain_VKA_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }
